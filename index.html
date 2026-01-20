@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Equipe | Estilo Discord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Cores oficiais do Discord Moderno */
+        :root {
+            --discord-blurple: #5865F2;
+            --discord-dark: #313338;
+            --discord-card: #2B2D31;
+            --discord-header: #1E1F22;
+        }
+        body { background-color: var(--discord-dark); color: white; }
+        .bg-blurple { background-color: var(--discord-blurple); }
+        .bg-discord-card { background-color: var(--discord-card); }
+        .bg-discord-header { background-color: var(--discord-header); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <header class="bg-discord-header py-16 px-4 text-center shadow-xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Conheça o Time</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">Unidos pela tecnologia e pela comunidade. Conheça as mentes por trás deste projeto incrível.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-8 flex items-center justify-center gap-2">
+                <span class="bg-blurple w-8 h-1 rounded"></span>
+                Fundadores
+                <span class="bg-blurple w-8 h-1 rounded"></span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-discord-card p-6 rounded-2xl border border-white/5 hover:border-indigo-500 transition-all group">
+                    <div class="flex flex-col items-center">
+                        <img src="https://ui-avatars.com/api/?name=Fundador+Um&background=5865F2&color=fff&size=128" alt="Fundador" class="w-32 h-32 rounded-full mb-4 ring-4 ring-indigo-500/30 group-hover:ring-indigo-500 transition-all">
+                        <h3 class="text-xl font-bold">Nome do Fundador</h3>
+                        <span class="text-indigo-400 text-sm font-semibold uppercase tracking-wider mb-4">Founder & CEO</span>
+                        <p class="text-gray-400 text-center text-sm leading-relaxed">
+                            Visonário responsável pela direção estratégica. Especialista em arquitetura de sistemas e apaixonado por comunidades digitais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-discord-card p-6 rounded-2xl border border-white/5 hover:border-indigo-500 transition-all group">
+                    <div class="flex flex-col items-center">
+                        <img src="https://ui-avatars.com/api/?name=Co+Fundador&background=5865F2&color=fff&size=128" alt="Co-Fundador" class="w-32 h-32 rounded-full mb-4 ring-4 ring-indigo-500/30 group-hover:ring-indigo-500 transition-all">
+                        <h3 class="text-xl font-bold">Nome do Co-Fundador</h3>
+                        <span class="text-indigo-400 text-sm font-semibold uppercase tracking-wider mb-4">Co-Founder & CTO</span>
+                        <p class="text-gray-400 text-center text-sm leading-relaxed">
+                            Líder técnico focado em performance e escalabilidade. Transforma ideias complexas em código eficiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-8 text-center">Nossos Especialistas</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-discord-card p-5 rounded-xl border border-white/5 flex gap-4 items-start">
+                    <img src="https://ui-avatars.com/api/?name=Staff+One&background=444&color=fff" class="w-16 h-16 rounded-lg shrink-0">
+                    <div>
+                        <h4 class="font-bold text-white leading-none">Membro do Time</h4>
+                        <span class="text-xs text-gray-500">Desenvolvedor Frontend</span>
+                        <p class="text-sm text-gray-400 mt-2">Focado em criar interfaces modernas e responsivas com Tailwind.</p>
+                    </div>
+                </div>
+
+                <div class="bg-discord-card p-5 rounded-xl border border-white/5 flex gap-4 items-start">
+                    <img src="https://ui-avatars.com/api/?name=Staff+Two&background=444&color=fff" class="w-16 h-16 rounded-lg shrink-0">
+                    <div>
+                        <h4 class="font-bold text-white leading-none">Outro Membro</h4>
+                        <span class="text-xs text-gray-500">UX Designer</span>
+                        <p class="text-sm text-gray-400 mt-2">Transformando a experiência do usuário em algo simples e intuitivo.</p>
+                    </div>
+                </div>
+
+                <div class="bg-discord-card p-5 rounded-xl border border-white/5 flex gap-4 items-start">
+                    <img src="https://ui-avatars.com/api/?name=Staff+Three&background=444&color=fff" class="w-16 h-16 rounded-lg shrink-0">
+                    <div>
+                        <h4 class="font-bold text-white leading-none">Nome do Staff</h4>
+                        <span class="text-xs text-gray-500">Community Manager</span>
+                        <p class="text-sm text-gray-400 mt-2">Cuidando das pessoas e garantindo um ambiente saudável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-10 border-t border-white/5 text-gray-500 text-sm">
+        &copy; 2026 Damonisch - Maggi Dev - Dean Damonisch
+    </footer>
+
+</body>
+</html>
